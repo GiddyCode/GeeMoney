@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".SecondActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/adView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/adView8"
+            android:layout_alignStart="@+id/adView8"
+            android:layout_alignLeft="@+id/adView8"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="2dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adView6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adView7"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adView5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adView4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/adView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/adView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+
+        <!-- view for AdMob Banner Ad -->
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+
+        <Button
+            android:id="@+id/interstitialAdsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/adView10"
+            android:layout_below="@+id/adView9"
+            android:layout_alignStart="@+id/adView9"
+            android:layout_alignLeft="@+id/adView9"
+            android:layout_gravity="start"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/blue_tab_button"
+            android:text="Interstitial"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="10sp" />
+
+
+        <Button
+            android:id="@+id/moving_on_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/adView10"
+            android:layout_below="@+id/adView9"
+            android:layout_alignEnd="@+id/adView9"
+            android:layout_alignRight="@+id/adView9"
+            android:layout_gravity="end"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/red_tab_button"
+            android:text="Moving ON"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
